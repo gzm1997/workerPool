@@ -25,6 +25,7 @@ func (w Worker) Start() {
 	}()
 }
 
+//产生一个新的worker
 func NewWorker() *Worker {
 	w := &Worker{}
 	w.Todo = make(TaskChan)
